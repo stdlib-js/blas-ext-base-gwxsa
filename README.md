@@ -60,13 +60,18 @@ This API is complementary to the package [`@stdlib/blas-ext/base/gwapx`][@stdlib
 ## Usage
 
 ```javascript
+import gwxsa from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-gwxsa/tags). For example,
+
+```javascript
 import gwxsa from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@v0.0.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@v0.0.0-esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@esm/index.mjs';
 ```
 
 #### gwxsa( N, alpha, x, strideX, w, strideW )
@@ -172,7 +177,7 @@ gwxsa.ndarray( 3, 5.0, x, 1, x.length-3, w, 1, w.length-3 );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import gwxsa from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@v0.0.0-esm/index.mjs';
+import gwxsa from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gwxsa@esm/index.mjs';
 
 var x = discreteUniform( 10, -100, 100, {
     'dtype': 'float64'
